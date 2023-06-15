@@ -1,6 +1,37 @@
 {% extends "base.html" %}
 {% block title %}Q-5 - Siddhesh{% endblock %}
 {% block content %}
+<style>
+    .navbar {
+        background-color: #333;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .nav-item {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        color: #fff;
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+        background-color: #222;
+    }
+</style>
+
 {% if error %}
     <p class="">{{ error }}</p>
 {% endif %}

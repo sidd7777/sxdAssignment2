@@ -134,7 +134,7 @@ def form2():
                     break
                 results.append(input_row)
                 count += 1
-                
+
             return render_template(
                 "form2.html",
                 result=results,

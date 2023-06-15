@@ -2,7 +2,7 @@
 {% block title %}Q-4 - Siddhesh{% endblock %}
 {% block content %}
 {% if error %}
-    <p class="">{{ error }}</p>
+    <p class="error">{{ error }}</p>
 {% endif %}
     <div class="form-group">
         <form action="/form4" method="POST">
@@ -18,9 +18,9 @@
         </form>
     </div>
 {% if data == 1 %}
-    <p class="">Earthquake records of type: {{ clus }}</p>
+    <p class="result">Earthquake records of type: {{ clus }}</p>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover table-fixed table-wrap">
+        <table class="table table-bordered table-hover table-fixed table-wrap colorful-table">
             <caption>Earthquake Records</caption>
             <thead>
                 <tr>

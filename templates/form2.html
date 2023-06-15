@@ -2,10 +2,10 @@
 {% block title %}Q-2 - Siddhesh{% endblock %}
 {% block content %}
 {% if error %}
-    <p class="">{{ error }}</p>
+    <p class="error">{{ error }}</p>
 {% endif %}
 {% if form != Null %}
-<div class="form-group">
+    <div class="form-group">
         <form action="/form2" method="POST">
             {{ form.csrf_token() }}
             {{ form.r1.label }} {{ form.r1 }}<br/>
@@ -17,12 +17,12 @@
     </div>
 {% endif %}
 {% if data == 1 %}
-    <p class="">Magnitude Range 1: {{ r1 }}</p>
-    <p class="">Magnitude Range 2: {{ r2 }}</p>
-    <p class="">Start Date :  {{start}}</p>
-    <p class="">End Date :  {{end}}</p>
+    <p class="result">Magnitude Range 1: {{ r1 }}</p>
+    <p class="result">Magnitude Range 2: {{ r2 }}</p>
+    <p class="result">Start Date: {{ start }}</p>
+    <p class="result">End Date: {{ end }}</p>
     <div class="table-responsive">
-        <table class="table table-bordered table-hover table-fixed table-wrap">
+        <table class="table table-bordered table-hover table-fixed table-wrap colorful-table">
             <caption>Earthquake Records</caption>
             <thead>
                 <tr>

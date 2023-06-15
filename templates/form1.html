@@ -2,7 +2,7 @@
 {% block title %}Q-1 - Siddhesh{% endblock %}
 {% block content %}
 {% if error %}
-    <p class="">{{ error }}</p>
+    <p class="error">{{ error }}</p>
 {% endif %}
 {% if form != Null %}
     <div class="form-group">
@@ -14,10 +14,10 @@
     </div>
 {% endif %}
 {% if data == 1 %}
-    <p class="">Magnitude: {{ mag }}</p>
-    <p class="">Total Number of Records with magnitude > {{ mag }} are {{ cnt }}.</p>
+    <p class="result">Magnitude: {{ mag }}</p>
+    <p class="result">Total Number of Records with magnitude > {{ mag }} are {{ cnt }}.</p>
     <div class="table-responsive">
-    <table class="table table-bordered table-hover table-fixed table-wrap" style="width:max-content;height: 600px; overflow: scroll;">
+    <table class="table table-bordered table-hover table-fixed table-wrap colorful-table">
         <caption>Earthquake Records</caption>
         <thead>
             <tr>
