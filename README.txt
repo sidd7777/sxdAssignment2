@@ -1,7 +1,7 @@
-Class: CSE 6331
-Name: Nitya Hitendrabhai Kansara
+Class: CSE 6332
+Name: Siddhesh Rajesh Dandavatimath
 Assignment 2.
 
-Run app.py with python 3.7 versio.
+Run app.py with python 3.9 versio.
 
 Link : https://assignment-02-nityakansara.azurewebsites.net/
