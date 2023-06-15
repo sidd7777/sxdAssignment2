@@ -4,4 +4,4 @@ Assignment 2.
 
 Run app.py with python 3.9 versio.
 
-Link : https://assignment-02-nityakansara.azurewebsites.net/
+Link : https://sxdassignment2.azurewebsites.net/
